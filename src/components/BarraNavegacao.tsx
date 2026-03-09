@@ -1,39 +1,50 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet, Platform } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 export function BarraNavegacao() {
+  const { top } = useSafeAreaInsets();
+
   return (
-    // TODO: adicionar style={styles.container}
-    // Queremos: flexDirection row, space-between, padding 16
-    <View>
+    <View
+      style={[
+        styles.container,
+        {
+          paddingTop: Platform.OS === "ios" ? top : top + 10,
+        }
+      ]}
+    >
+      <Text style={styles.logo}>🏠 MeuApp</Text>
 
-      {/* Logo — lado esquerdo */}
-      {/* TODO: adicionar style={styles.logo} */}
-      <Text>🏠 MeuApp</Text>
+      <View style={styles.grupoBotoes}>
 
-      {/* Grupo de botões — lado direito */}
-      {/* TODO: adicionar style={styles.grupoBotoes} */}
-      {/* Queremos: flexDirection row, gap 12 */}
-      <View>
+        <Text style={styles.botao}>Buscar</Text>
 
-        {/* TODO: adicionar style={styles.botao} */}
-        <Text>Buscar</Text>
-
-        {/* TODO: adicionar style={styles.botao} */}
-        <Text>Perfil</Text>
-
+        <Text style={styles.botao}>Perfil</Text>
       </View>
     </View>
   );
 }
 
-// const styles = StyleSheet.create({
-//   container: {
-//   },
-//   logo: {
-//   },
-//   grupoBotoes: {
-//   },
-//   botao: {
-//   },
-// });
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: 16,
+    backgroundColor: "#1A1D2E"
+  },
+  logo: {
+    fontSize: 18,
+    color: "#fff",
+    fontWeight: "bold"
+  },
+  grupoBotoes: {
+    flexDirection: "row",
+    gap: 12
+  },
+  botao: {
+    fontSize: 12,
+    color: "#a78bfa"
+  },
+});
