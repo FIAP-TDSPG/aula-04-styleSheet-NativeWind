@@ -27,22 +27,6 @@ EstilizacaoApp/
         └── cores.ts                 ← constantes de cores
 ```
 
----
-
-## Roteiro da aula
-
-Cada componente tem os `// TODO:` comentados indicando
-o que adicionar em cada momento da aula.
-
-| Componente        | Conceito principal            | Slide |
-|-------------------|-------------------------------|-------|
-| `BarraNavegacao`  | `flexDirection`, `gap`        | 6–8   |
-| `CartaoPerfil`    | StyleSheet, sombra, `flex: 1` | 3–5   |
-| `CartaoProduto`   | `position: 'absolute'`        | 14    |
-| `BotaoAcao`       | NativeWind vs StyleSheet      | 9–11  |
-
----
-
 ## Para instalar o NativeWind (bônus)
 
 ```bash
