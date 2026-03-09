@@ -5,6 +5,7 @@ Projeto base da aula de **Estilização no React Native**.
 ## Como rodar
 
 ```bash
+npm install
 npx expo start
 ```
 
