@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
+import { CORES } from '../styles/cores';
 
 export function CartaoPerfil() {
   return (
@@ -69,7 +70,7 @@ const styles = StyleSheet.create({
   },
   cargo: {
     fontSize: 13,
-    color: "#a78bfa",
+    color: CORES.textoCargo,
     marginTop: 2
   },
   bio: {
@@ -78,7 +79,7 @@ const styles = StyleSheet.create({
     marginBottom: 16
   },
   botao: {
-    backgroundColor: "#7C3AED",
+    backgroundColor: CORES.roxoPrincipal,
     borderRadius: 8,
     padding: 12,
     alignItems: 'center'

@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Platform } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { CORES } from '../styles/cores';
 
 export function BarraNavegacao() {
   const { top } = useSafeAreaInsets();
@@ -45,6 +46,6 @@ const styles = StyleSheet.create({
   },
   botao: {
     fontSize: 12,
-    color: "#a78bfa"
+    color: CORES.textoCargo
   },
 });

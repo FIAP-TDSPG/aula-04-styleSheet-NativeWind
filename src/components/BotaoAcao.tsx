@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { CORES } from '../styles/cores';
 
 export function BotaoAcao() {
   return (
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   botao: {
-    backgroundColor: "#7C3AED",
+    backgroundColor: CORES.roxoPrincipal,
     paddingHorizontal: 32,
     paddingVertical: 14,
     borderRadius: 50,
@@ -70,10 +71,10 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     marginBottom: 12,
     borderWidth: 1,
-    borderColor: '#7C3AED'
+    borderColor: CORES.roxoPrincipal
   },
   botaoSecundarioTexto: {
-    color: "#7C3AED",
+    color: CORES.roxoPrincipal,
     fontWeight: 'bold',
     fontSize: 16
   },
