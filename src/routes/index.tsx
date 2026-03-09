@@ -10,12 +10,13 @@ export default function Routes() {
 
   return (
     <View
-      style={{
-        flex: 1,
-        // marginTop: top
-        // paddingTop: top,
-        backgroundColor: CORES.fundoEscuro
-      }}
+      // style={{
+      //   flex: 1,
+      //   // marginTop: top
+      //   // paddingTop: top,
+      //   backgroundColor: CORES.fundoEscuro
+      // }}
+      className={`flex bg-[${CORES.fundoEscuro}]`}
     >
       <ScrollView
         showsVerticalScrollIndicator={false}
