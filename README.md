@@ -2,6 +2,18 @@
 
 Projeto base da aula de **Estilização no React Native**.
 
+## Objetivo da aula
+
+Aprender a montar interfaces reutilizáveis e bem organizadas no React Native, aplicando estilos com:
+
+- `StyleSheet` (estilos locais, composição e organização)
+- Flexbox (layout em linha/coluna, alinhamento e espaçamento)
+- Posicionamento (incluindo `position: absolute`)
+- Sombra e “cartões” (visuais comuns em apps)
+- Constantes de tema (cores centralizadas)
+
+Como bônus, você também verá como aplicar estilos utilitários usando **NativeWind** (inspirado no Tailwind).
+
 ## Como rodar
 
 ```bash
@@ -37,4 +49,3 @@ npx expo install --dev tailwindcss
 # Depois configure tailwind.config.js e babel.config.js
 # conforme o Slide 9 da apresentação
 ```
-# aula-04-styleSheet-NativeWind
